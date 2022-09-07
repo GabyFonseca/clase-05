@@ -11,4 +11,9 @@ p_load(rio, # función import/export: permite leer/escribir archivos desde difer
        janitor, # función tabyl: frecuencias relativas
        dplyr) # contiene conjuntos de datos.
        
-getwd() # Ruta actual, si quiero conocer la ruta donde r va a estar llamando oguardando las cosas
+##Saber la ruta y que contiene la carpeta       
+getwd() # Ruta actual, si quiero conocer la ruta donde r va a estar llamando o guardando las cosas
+
+list.files() # Archivos en el directorio de trabajo
+
+
