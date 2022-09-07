@@ -12,3 +12,9 @@ p_load(rio, # función import/export: permite leer/escribir archivos desde difer
        skimr, # funcion skim: describe un conjunto de datos
        janitor, # función tabyl: frecuencias relativas
        dplyr) # contiene conjuntos de datos.
+
+##Importar - Exportar un conjunto de datos
+##    Importar Datos
+data_csv = import(file="input/datos_censo.csv" , skip=6 , encoding="UTF-8") 
+
+data_xls = import(file="input/datos_excel.xlsx" , skip=9)
