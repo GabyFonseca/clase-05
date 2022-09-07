@@ -55,3 +55,17 @@ glimpse(x = db)
 ## de la librería skimr, resumir la base de datos
 skim(data = db) 
 
+##MANIPULAR VARIABLES
+##Renombrar una varible
+db =rename(.data = db, weigh=mass, height_cm=height)
+colnames(db) ##Ver el vector de nombres de la base de datos
+
+colnames(db)[9]= "genero"
+colnames(db)
+
+##Convertir todos a Mayusculas
+df=select_all(.tbl = db, toupper)
+
+##Corrergir quitando espacios, acentos y mayusculas
+clean_names(dat = data_csv)
+
